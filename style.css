@@ -1,0 +1,129 @@
+/* Base styles */
+body {
+    margin: 0;
+    font-family: Verdana, sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+  }
+  
+  .container {
+    max-width: 900px;
+    margin: auto;
+    padding: 20px;
+  }
+  
+  h1, h2, h3 {
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+    color: #4A90E2;
+  }
+  
+  h1 {
+    font-size: 24px;
+  }
+  
+  h2 {
+    font-size: 20px;
+    margin-top: 40px;
+  }
+  
+  h3 {
+    font-size: 18px;
+  }
+  
+  p {
+    font-size: 16px;
+    line-height: 1.6;
+  }
+  
+  /* Header */
+  .header {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  
+  .tagline {
+    color: #D0021B;
+    font-weight: bold;
+  }
+  
+  /* About section */
+  .about {
+    background: white;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+  }
+  
+  /* Skills section */
+  .skills {
+    background-color: white;
+    padding: 20px;
+    margin-top: 30px;
+    border-radius: 12px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+  }
+  
+  .skill-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 10px;
+  }
+  
+  .skill {
+    background-color: #4A90E2;
+    color: white;
+    padding: 8px 14px;
+    border-radius: 20px;
+    font-size: 14px;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .skill:hover {
+    background-color: #D0021B;
+    box-shadow: 0 2px 8px rgba(208, 2, 27, 0.3);
+  }
+  
+  /* Projects section */
+  .project-list {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 15px;
+  }
+  
+  .project-card {
+    background: white;
+    border-left: 5px solid #D0021B;
+    padding: 15px;
+    border-radius: 10px;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+  }
+  
+  .project-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Contact section */
+  .contact {
+    margin-top: 40px;
+    background-color: #fff;
+    padding: 15px;
+    border-left: 5px solid #4A90E2;
+    border-radius: 10px;
+  }
+  
+  /* Responsive */
+  @media (max-width: 600px) {
+    .about {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    .skill-list {
+      justify-content: center;
+    }
+  }
+  
